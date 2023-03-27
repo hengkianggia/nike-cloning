@@ -6,8 +6,8 @@ import Product1 from "../component/Product/Product1";
 import Product2 from "../component/Product/Product2";
 import Product3 from "../component/Product/Product3";
 import Product4 from "../component/Product/Product4";
-import header from "../Data/Home/Header";
-import { produk, header2 } from "../Data/Home/Header";
+import header from "../Data/Home/Data";
+import { produk, header2 } from "../Data/Home/Data";
 
 const produkList = produk.map((item) => {
   return (

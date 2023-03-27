@@ -12,7 +12,7 @@ const Product4 = ({title}) => {
       </div>
 
       <div className="absolute bottom-10 left-10">
-        <button className="px-4 py-2 bg-white text-black font-Helvetica rounded-full">{title}</button>
+        <button className="px-6 py-2 bg-white text-black font-Helvetica rounded-full">{title}</button>
       </div>
     </div>
   );

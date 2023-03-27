@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
-import App from "./App";
 import Root from "./Route/Root";
 import "./index.css";
 import Home from "./Route/Home";
@@ -11,6 +10,7 @@ import Women from "./Route/Women";
 import Kids from "./Route/Kids";
 import Sale from "./Route/Snkrs";
 import Snkrs from "./Route/Snkrs";
+import Coba from "./Coba";
 
 const router = createBrowserRouter([
   {
