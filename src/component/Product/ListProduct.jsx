@@ -8,7 +8,7 @@ const ListProduct = () => {
         <h1 className="font-Helvetica text-[24px]">Trending This Week</h1>
       </div>
 
-      <div className="w-full flex justify-between">
+      <div className="w-full flex justify-between overflow-x-scroll">
         <Product1 />
         <Product1 />
         <Product1 />
