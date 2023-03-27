@@ -1,6 +1,7 @@
 import React from "react";
+import Button from "./UI/Button";
 
-const Header = ({ p, title, desc, kate, className }) => {
+const Header = ({ p, title, desc, kate, className, button }) => {
   return (
     <header className="w-full px-14 pt-16">
       <div>
@@ -19,16 +20,12 @@ const Header = ({ p, title, desc, kate, className }) => {
         <div className="space-y-1 font-Helvetica w-[45%] text-center flex flex-col items-center">
           <div className="mb-5 flex flex-col items-center">
             <p>{p}</p>
-            <h1
-              className={`${className} text-[72px] font-bold leading-[68px]`}
-            >
+            <h1 className={`${className} text-[72px] font-bold leading-[68px]`}>
               {title}
             </h1>
           </div>
           <p>{desc}</p>
-          <button className="px-6 py-2 bg-black text-white rounded-full">
-            Shop Now
-          </button>
+          <Button teks={button} />
         </div>
       </div>
     </header>

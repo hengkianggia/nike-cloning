@@ -28,6 +28,7 @@ const Home = () => {
         title={header.title}
         desc={header.desc}
         className={"w-[80%]"}
+        button={header.button}
       />
 
       <div className="w-full px-14 mt-20 space-y-5">
@@ -65,6 +66,7 @@ const Home = () => {
         desc={header2.desc}
         kate={header2.kate}
         className={"w-[190%]"}
+        button={header2.button}
       />
 
       <div className="w-full mt-20 px-14">
@@ -93,7 +95,6 @@ const Home = () => {
               <Product3 />
             </div>
           </div>
-
         </div>
       </div>
 

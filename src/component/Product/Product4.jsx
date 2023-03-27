@@ -3,7 +3,7 @@ import React from "react";
 const Product4 = ({title}) => {
   return (
     <div className="w-[32%] relative">
-      <div className="w-full h-[90vh] bg-orange-400">
+      <div className="w-full h-[95vh] bg-orange-400">
         <img
           src=""
           alt=""

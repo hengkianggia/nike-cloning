@@ -2,6 +2,7 @@ const header = {
   p: "Just in",
   title: "NIKE AIR MAX PULSE",
   desc: "Inspired by the energy of London's music scene comes the Air Max Pulse. A tough silhouette infused with an unreal sensation of Air",
+  button: "Shop Now",
 };
 
 export const header2 = {
@@ -9,6 +10,7 @@ export const header2 = {
   p: "",
   title: "STEP INTO WHAT FEEL GOOD",
   desc: "Couse everyone should know the feeling of running in that perfect pair",
+  button: "Find Your Shoe",
 };
 
 export const produk = [
