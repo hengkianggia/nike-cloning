@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../component/Header";
 import List from "../component/Product/List";
-import WrapList3 from "../component/Product/WrapList3";
 import Product1 from "../component/Product/Product1";
 import Product2 from "../component/Product/Product2";
 import Product3 from "../component/Product/Product3";
