@@ -112,8 +112,8 @@ const Women = () => {
             />
           </div>
           <div className="flex gap-x-5">
-            <Button teks={"Explore NTC"} />
-            <Button teks={"Explore NRC"} />
+            <Button teks={"Explore NTC"} className={'text-white'}/>
+            <Button teks={"Explore NRC"} className={'text-white'}/>
           </div>
         </div>
       </header>

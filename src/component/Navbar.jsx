@@ -2,7 +2,9 @@ import React from "react";
 import { SiNike } from "react-icons/si";
 import { GrNotification } from "react-icons/gr";
 import { MdFavoriteBorder } from "react-icons/md";
+import { AiOutlineUser } from "react-icons/ai";
 import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
@@ -39,13 +41,13 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="search"
-            className="w-40 py-2 px-4 rounded-full bg-gray-100 text-md"
+            className="w-40 py-2 px-4 rounded-full bg-gray-100 text-md focus:border-gray-300"
           ></input>
           <div className="text-[24px]">
             <MdFavoriteBorder />
           </div>
-          <div className="text-[20px]">
-            <GrNotification />
+          <div className="text-[24px]">
+            <AiOutlineUser />
           </div>
         </div>
       </div>
