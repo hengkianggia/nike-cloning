@@ -1,21 +1,18 @@
 import React from "react";
-import Header from "../component/Header";
-import List from "../component/Product/List";
-import ListProduct from "../component/Product/ListProduct";
-import ListProduct2 from "../component/Product/ListProduct2";
-import ListProduct4 from "../component/Product/ListProduct4";
-import WrapList3 from "../component/Product/WrapList3";
+import FilterProduk from "./Sale/FilterProduk";
+import NavProduk from "./Sale/NavProduk";
+import ListProduk from "./Sale/ListProduk";
 
 const Sale = () => {
   return (
     <>
-      <Header />
-      <ListProduct />
-      <ListProduct2 />
-      <Header />
-      <WrapList3 />
-      <ListProduct4 />
-      <List />
+      <section className="w-full px-16 mt-20">
+        <NavProduk />
+        <div className="w-full flex">
+          <FilterProduk />
+          <ListProduk />
+        </div>
+      </section>
     </>
   );
 };

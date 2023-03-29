@@ -8,7 +8,7 @@ import Home from "./Route/Home";
 import Men from "./Route/Men";
 import Women from "./Route/Women";
 import Kids from "./Route/Kids";
-import Sale from "./Route/Snkrs";
+import Sale from "./Route/Sale";
 import Snkrs from "./Route/Snkrs";
 import Coba from "./Coba";
 
