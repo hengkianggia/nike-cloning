@@ -11,6 +11,9 @@ import Kids from "./Route/Kids";
 import Sale from "./Route/Sale";
 import Snkrs from "./Route/Snkrs";
 import Coba from "./Coba";
+import Feed from "./Route/SNKRS/Feed";
+import InStock from "./Route/SNKRS/InStock";
+import Upcoming from "./Route/SNKRS/Upcoming";
 
 const router = createBrowserRouter([
   {
@@ -37,10 +40,15 @@ const router = createBrowserRouter([
         path: "sale",
         element: <Sale />,
       },
-      {
-        path: "snkrs",
-        element: <Snkrs />,
-      },
+    ],
+  },
+  {
+    path: "snkrs",
+    element: <Snkrs />,
+    children: [
+      { index: true, element: <Feed /> },
+      { path: "in-stock", element: <InStock /> },
+      { path: "upcoming", element: <Upcoming /> },
     ],
   },
 ]);
