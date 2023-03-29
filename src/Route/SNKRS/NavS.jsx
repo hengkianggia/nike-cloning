@@ -2,7 +2,7 @@ import React from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { RiLayoutGridFill } from "react-icons/ri";
 import { SiJordan } from "react-icons/si";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavS = () => {
   return (
