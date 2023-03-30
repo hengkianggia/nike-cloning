@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { BsFilter } from "react-icons/bs";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { filterAction } from "../../Store/Filter";
 
 const NavProduk = () => {
   const [open, setOpen] = useState(false);
@@ -8,14 +10,20 @@ const NavProduk = () => {
     setOpen(!open);
   };
 
+  const dispatch = useDispatch();
+  const filterHandler = () => {
+    dispatch(filterAction.openFilter());
+  };
+
   return (
     <section className="w-full">
       <div className="flex justify-between pb-10 items-center">
-        <h1 className="text-xl font-Helvetica font-medium">Mens Shoes (121)</h1>
+        <h1 className="text-xl font-Helvetica font-medium">Trending (20)</h1>
 
         <div className="flex gap-x-8">
           <div
             className="flex items-center font-Helvetica gap-x-2 cursor-pointer"
+            onClick={filterHandler}
           >
             <p>Hide Filters</p>
             <div className="text-[20px]">
