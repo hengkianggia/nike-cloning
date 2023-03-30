@@ -1,10 +1,20 @@
 import React from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { RiLayoutGridFill } from "react-icons/ri";
+import { RiTableAltFill } from "react-icons/ri";
 import { SiJordan } from "react-icons/si";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { gridAction } from "../../Store/Grid";
 
 const NavS = () => {
+  const dispatch = useDispatch();
+  const gridHandler = () => {
+    dispatch(gridAction.gridFilter());
+  };
+
+  const isGrid = useSelector((state) => state.grid.grid);
+
   return (
     <div className="w-full px-6">
       <Link to={"/"}>
@@ -39,8 +49,8 @@ const NavS = () => {
           </ul>
         </div>
 
-        <div className="text-[28px]">
-          <RiLayoutGridFill />
+        <div className="text-[28px] cursor-pointer" onClick={gridHandler}>
+          {!isGrid ? <RiLayoutGridFill /> : <RiTableAltFill />}
         </div>
       </div>
       <hr />

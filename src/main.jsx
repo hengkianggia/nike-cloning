@@ -14,6 +14,8 @@ import Coba from "./Coba";
 import Feed from "./Route/SNKRS/Feed";
 import InStock from "./Route/SNKRS/InStock";
 import Upcoming from "./Route/SNKRS/Upcoming";
+import { Provider } from "react-redux";
+import store from "./Store/Store";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +57,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
